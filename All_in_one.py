@@ -1,6 +1,7 @@
 from turtle import *
 import random
 command = input("What do you like to see?")
+input("")
 match command.split():
     case["1"]: #Simple square
         forward(100)
@@ -15,6 +16,7 @@ match command.split():
         for i in range(500): # this "for" repeat these function 500 times
             forward(i)
             eft(91)
+            if i == 15
 
     case["3"]: #Colorful hexagon spiral
         color = ['red', 'purple', 'blue', 'green', 'yellow', 'orange']
