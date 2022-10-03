@@ -1,6 +1,7 @@
 from turtle import *
 import random
 command = input("What do you like to see?")
+t = Turtle()
 input("")
 match command.split():
     case["1"]: #Simple square
@@ -60,3 +61,14 @@ match command.split():
         for i in range(6):
             circle(circle_size)
             left(60)
+    case["6"]: #Flower
+        bgcolor("black")
+        t.pencolor("purple")
+        t.speed(0)
+        for i in range(340):
+            t.circle(190-i, 90)
+            t.left(90)
+            t.circle(190 - i, 90)
+            t.left(18)
+        if i > 190:
+            t.pensize(3)
