@@ -16,8 +16,7 @@ match command.split():
     case["2"]: #Simple spiral
         for i in range(500): # this "for" repeat these function 500 times
             forward(i)
-            eft(91)
-            if i == 15
+            left(91)
 
     case["3"]: #Colorful hexagon spiral
         color = ['red', 'purple', 'blue', 'green', 'yellow', 'orange']
