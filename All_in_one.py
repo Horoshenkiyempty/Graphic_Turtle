@@ -71,3 +71,10 @@ match command.split():
             t.left(18)
         if i > 190:
             t.pensize(3)
+
+    case["7"]: #Angle
+        for angle in range (0, 360 , 15):
+            setheading(angle)
+            forward(100)
+            write(str(angle) + '°')
+            backward(100)
