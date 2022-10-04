@@ -1,7 +1,6 @@
 from turtle import *
 import random
 
-command = input("What do you like to see?")
 print("1. Simple square")
 print("2. Simple spiral")
 print("3. Colorful hexagon spiral")
@@ -9,6 +8,8 @@ print("4. A random blue flower")
 print("5. Random colorful flower")
 print("6. Flower")
 print("7. Angle")
+print("")
+command = input("What do you like to see?      ")
 
 t = Turtle()
 match command.split():
