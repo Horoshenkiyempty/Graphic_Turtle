@@ -2,30 +2,28 @@ from turtle import *
 import random
 command = input("What do you like to see?")
 t = Turtle()
-t.speed(0)
 match command.split():
     case["1"]: #Simple square
-        t.forward(100)
-        t.left(90)
-        t.forward(100)
-        t.left(90)
-        t.forward(100)
-        t.left(90)
-        t.forward(100)
+        forward(100)
+        left(90)
+        forward(100)
+        left(90)
+        forward(100)
+        left(90)
+        forward(100)
 
     case["2"]: #Simple spiral
         for i in range(500): # this "for" repeat these function 500 times
-            t.forward(i)
-            t.left(91)
+            forward(i)
+            left(91)
 
     case["3"]: #Colorful hexagon spiral
         color = ['red', 'purple', 'blue', 'green', 'yellow', 'orange']
-        t.speed(0)
         for i in range(360):
-            t.pencolor(colors [i % 6])
+            pencolor(colors [i % 6])
             width(i / 100 + 1)
-            t.forward(i)
-            t.left(59)
+            forward(i)
+            left(59)
 
     case["4"]: #A random blue flower
         for n in range(60):
@@ -61,6 +59,7 @@ match command.split():
         for i in range(6):
             circle(circle_size)
             left(60)
+
     case["6"]: #Flower
         bgcolor("black")
         t.pencolor("purple")
